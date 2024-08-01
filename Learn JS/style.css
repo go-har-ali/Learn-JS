@@ -1,0 +1,56 @@
+#inc-btn {
+    background-color: #43515f;
+    border: 1px solid #f8f9fa;
+    color: #ffffff;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+
+}
+
+#reset-btn {
+    background-color: #43515f;
+    border: 1px solid #f8f9fa;
+    color: #ffffff;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    left: 300px;
+}
+
+#dec-btn {
+    background-color: #43515f;
+    border: 1px solid #f8f9fa;
+    color: #ffffff;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    left: 380px;
+}
+
+#counter {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #43515f;
+    /* set the counter in the center of the screen */
+    position: absolute;
+    left: 50%;
+}
