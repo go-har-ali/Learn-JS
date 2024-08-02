@@ -142,3 +142,18 @@ switch (true) {
 }
 
 console.log(`Your grade is ${letterGrade}`);
+
+// String methods
+let username = 'John Doe';
+
+username.charAt(0); // J
+console.log(username.charAt(0));
+
+username.indexOf('o'); // 1
+console.log(username.indexOf('o'));
+
+console.log(username.length);
+
+username = username.trim();
+console.log(username);
+
