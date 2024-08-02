@@ -41,3 +41,26 @@ z = Math.max(x, y);
 //z = Math.tan(x);
 
 console.log(z); 
+
+let age = 21;
+let message = age >= 18 ? console.log('You are an adult') : console.log('You are a minor');
+console.log(message);
+let message2;
+
+if (age >= 18) {
+    message2 = 'You are an adult';
+} else {    
+    message2 = 'You are a minor';
+}
+
+let time = 16;
+let greeting = time < 12 ? 'Good morning' : time < 18 ? 'Good afternoon' : 'Good evening';
+console.log(greeting);
+
+let isStudent = true;
+let message3 = isStudent ? "You are a student" : "You are not a student";
+console.log(message3);
+
+let purchaseAmount = 125;
+let discount = purchaseAmount > 100 ? 10 : 0;
+console.log(`Your total is $${purchaseAmount - purchaseAmount * (discount / 100)}`);
