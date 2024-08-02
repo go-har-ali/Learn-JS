@@ -1,3 +1,5 @@
+// Counting with buttons
+
 const decreaseBtn = document.getElementById('dec-btn');
 const resetBtn = document.getElementById('reset-btn');
 const increaseBtn = document.getElementById('inc-btn');
@@ -19,6 +21,8 @@ resetBtn.onclick = () => {
     count = 0;
     counter.textContent = count;
 };
+
+// Math Functions
 
 let x = 3.99;
 let y = 2;
@@ -42,6 +46,8 @@ z = Math.max(x, y);
 
 console.log(z); 
 
+// Turnary operators
+
 let age = 21;
 let message = age >= 18 ? console.log('You are an adult') : console.log('You are a minor');
 console.log(message);
@@ -64,3 +70,75 @@ console.log(message3);
 let purchaseAmount = 125;
 let discount = purchaseAmount > 100 ? 10 : 0;
 console.log(`Your total is $${purchaseAmount - purchaseAmount * (discount / 100)}`);
+
+//switch statement
+
+let day = 1;
+if (day === 1) {
+    console.log('Monday');
+} else if (day === 2) {
+    console.log('Tuesday');
+} else if (day === 3) {
+    console.log('Wednesday');
+} else if (day === 4) {
+    console.log('Thursday');
+} else if (day === 5) {
+    console.log('Friday');
+} else if (day === 6) {
+    console.log('Saturday');
+} else if (day === 7) {
+    console.log('Sunday');
+} else {
+    console.log('Invalid day');
+}
+
+let day2 = 1;
+switch (day2) {
+    case 1:
+        console.log('Monday');
+        break;
+    case 2:
+        console.log('Tuesday');
+        break;
+    case 3:
+        console.log('Wednesday');
+        break;
+    case 4:
+        console.log('Thursday');
+        break;
+    case 5:
+        console.log('Friday');
+        break;
+    case 6:
+        console.log('Saturday');
+        break;
+    case 7:
+        console.log('Sunday');
+        break;
+    default:
+        console.log('Invalid day');
+        break;
+}
+
+let testScore = 85;
+let letterGrade;
+
+switch (true) { 
+    case testScore >= 90:
+        letterGrade = 'A';
+        break;
+    case testScore >= 80:
+        letterGrade = 'B';
+        break;
+    case testScore >= 70:
+        letterGrade = 'C';
+        break;
+    case testScore >= 60:
+        letterGrade = 'D';
+        break;
+    default:
+        letterGrade = 'F';
+        break;
+}
+
+console.log(`Your grade is ${letterGrade}`);
