@@ -18,3 +18,44 @@ function rollDice() {
     diceResult.textContent = `dice: ${values.join(', ')}`;
     diceImages.innerHTML = images.join('');
 }
+
+// Random Password Generator
+
+let length = 12;
+let includeUppercase = true;
+let includeLowercase = true;
+let includeNumbers = true;
+let includeSymbols = true;
+
+function generatePassword(includeLowercase, includeUppercase, includeNumbers, includeSymbols, length) {
+    const uppercaseLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const lowercaseLetters = 'abcdefghijklmnopqrstuvwxyz';
+    const numbers = '0123456789';
+    const symbols = '!@#$%^&*()_+';
+
+    let characters = '';
+    let password = '';
+
+    if (includeUppercase) {
+        characters += uppercaseLetters;
+    }
+    if (includeLowercase) {
+        characters += lowercaseLetters;
+    }
+    if (includeNumbers) {
+        characters += numbers;
+    }
+    if (includeSymbols) {
+        characters += symbols;
+    }
+
+    for (let i = 0; i < length; i++) {
+        password += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+
+    console.log(`Generated Password is: ${password}`);
+    return password;
+}
+
+const pass = generatePassword(includeLowercase, includeUppercase, includeNumbers, includeSymbols, length);
+console.log(pass);
